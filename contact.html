@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+
+<html lang="fr">
+
+
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<title>La sophrologie</title>
+
+	<meta name="Description" content="Sophrologie, Lyon">
+
+	<meta name="Abstract" content="sophrologie.">
+
+	<meta name="keywords"
+		content="sophrologie, sophrologue Lyon, bien être, détente, développement personnnel, chambre syndicale de sophrologie, annuaire des sophrologues" />
+
+	<meta name="Revisit-After" content="14 Days">
+	<meta name="Robots" content="Index,Follow">
+	<meta name="Rating" content="general">
+
+	<link rel="stylesheet" href="CSS/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css" media="sreen" />
+	<link rel="shortcut icon" type="image/x-icon" href="CSS\logo.png" />
+	<!-- Responsive -->
+	<meta name="viewport" content="width=device-width" />
+
+	
+</head>
+
+<body>
+
+
+	<header>
+
+
+		<div id="logo">
+
+			<img src="CSS\grandlogo.png" height="100px">
+
+		</div>
+
+
+		<h1>La sophrologie</h1>
+
+
+
+		<div id="slogan">
+
+			<h2>Renouer avec votre rythme intérieur</h2>
+
+		</div>
+
+
+	</header>
+
+
+	<div class="topnav" id="myTopnav">
+		<!-- ICI PARTICULARITE : NOUS AVONS DEUX "DIV" EN UNE !!! UNE DIV DE TYPE "CLASS" ET UNE AUTRE DE TYPE "ID" -->
+
+		<a href="index.html">Accueil</a>
+		<a href="#news">Qu'est ce que la sophrologie ?</a>
+		<a href="#contact">Qui suis-je ?</a>
+		<a href="#about">Mes séances</a>
+		<a href="#about">Mes tarifs</a>
+		<a href="contact.html" class="active">Contactez-moi</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+			<i class="fa fa-bars"></i>
+		</a>
+
+
+	</div>
+	<!-- FIN DU MENU RESPONSIVE -->
+
+	<!-- CE QUI PEUT ETRE ÊTRE ECRIT APRES LE MENU / VOUS POUR PLACEZ CECI DANS UNE SECTION PAR EXEMPLE -->
+	<div>
+
+
+
+
+		<section>
+			<article>
+				<p>Pour me contacter</p>
+
+			</article>
+
+			<aside>
+
+				<h2>Formulaire de contact</h2>
+				<p>Pour tout renseignement ou prise de rendez-vous, vous pouvez me contacter directement par
+					l'intermédiaire du formulaire ci-dessous.</p>
+				<form name="myForm" action="/file.php" onsubmit="return validateForm()" method="post">
+					<table class="form-style">
+						<tbody>
+							<tr>
+								<td>
+									<label>
+										Nom et prénom<span class="required">*</span>
+									</label>
+								</td>
+								<td>
+									<input type="text" name="name" class="long" />
+									<span class="error" id="errorname"></span>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<label>
+										Numéro de téléphone<span class="required">*</span>
+									</label>
+								</td>
+								<td>
+									<input type="text" name="number" class="long" />
+									<span class="error" id="errornumber"></span>
+								</td>
+							</tr>
+
+
+							<tr>
+								<td>
+									<label>
+										Email <span class="required">*</span>
+									</label>
+								</td>
+								<td>
+									<input type="email" name="email" class="long" />
+									<span class="error" id="erroremail"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<label>
+										Message <span class="required">*</span>
+									</label>
+								</td>
+								<td>
+									<textarea name="message" class="long field-textarea"></textarea>
+									<span class="error" id="errormsg"></span>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<input type="submit" value="Envoyer">
+									<input type="reset" value="Réinitialiser">
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="2"><i>*champs obligatoires</i></td>
+							</tr>
+						</tfoot>
+					</table>
+				</form>
+			</aside>
+
+
+		</section>
+
+	</div>
+
+
+	<div id="panoramique" style="text-align: center;">
+		<img src="CSS\mer2.jpg">
+	</div>
+
+
+	<footer>
+
+
+
+	</footer>
+
+
+</body>
+
+<script lang="javascript">
+		function validateForm() {
+			var name = document.forms["myForm"]["name"];
+			var number = document.forms["myForm"]["number"];
+			var email = document.forms["myForm"]["email"];
+			var message = document.forms["myForm"]["message"];
+
+			if (name.value == "") {
+				document.getElementById('errorname').innerHTML = "Veuillez entrer un nom valide";
+				name.focus();
+				return false;
+			} else {
+				document.getElementById('errorname').innerHTML = "";
+			}
+			if (number.value == "") {
+				document.getElementById('errorname').innerHTML = "Veuillez entrer un numéro de téléphone valide";
+				number.focus();
+				return false;
+			} else {
+				document.getElementById('errornumber').innerHTML = "";
+			}
+			if (email.value == "") {
+				document.getElementById('erroremail').innerHTML = "Veuillez entrer une adresse mail valide";
+				email.focus();
+				return false;
+			} else {
+				document.getElementById('erroremail').innerHTML = "";
+			}
+
+			if (email.value.indexOf("@", 0) < 0) {
+				document.getElementById('erroremail').innerHTML = "Veuillez entrer une adresse mail valide";
+				email.focus();
+				return false;
+			}
+
+			if (email.value.indexOf(".", 0) < 0) {
+				document.getElementById('erroremail').innerHTML = "Veuillez entrer une adresse mail valide";
+				email.focus();
+				return false;
+			}
+
+			if (message.value == "") {
+				document.getElementById('errormsg').innerHTML = "Veuillez entrer un message valide";
+				message.focus();
+				return false;
+			} else {
+				document.getElementById('errormsg').innerHTML = "";
+			}
+
+			return true;
+		}
+	</script>
+
+
+</html>

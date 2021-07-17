@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'ROMANTICE';
+  src: url(./ROMANTICE.eot);
+  src: url(./ROMANTICE.eot?#iefix) format('embedded-opentype'),
+       url(./ROMANTICE.svg#ROMANTICE) format('svg'),
+       url(./ROMANTICE.ttf) format('truetype'),
+       url(./ROMANTICE.woff) format('woff'),
+       url(./ROMANTICE.woff2) format('woff2');
+}
