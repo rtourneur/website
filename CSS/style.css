@@ -65,11 +65,13 @@ section
 aside {
   width: 40%;
   margin: 2em;
+  text-align: left;
 }
 
 article {
   width: 50%;
   margin: 2em;
+  text-align: center;
 }
 
 
@@ -79,6 +81,13 @@ footer
   font-family:'Monotype Corsiva';
   height:80px;
 }
+
+#mentionslegales
+{
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 2em;
+} 
 
 footer h2
 {
@@ -127,7 +136,7 @@ section h2 {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.8em;
+  font-size: 1.6em;
   
 }
 
